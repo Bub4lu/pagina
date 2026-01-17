@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil de Usuario</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="src/style/proyect.css" />
+</head>
+<body class="bg-[#020319]">
+      <header class="h-auto bg-black">
+    <nav class="navbar relative">
+      <div class="nav">
+        <a href="/Login.html" class="logo">Logo</a>
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link learning">Aprender</a>
+
+            <div class="submenu">
+              <div class="Curses-recomend">
+                <h1>Recomendado</h1>
+                <div class="cont-recommend">
+                  <img  class="right-[2px]" src="/payton.png" alt="">
+                  <div class="cont-text">
+                    <span>Python</span>
+                    <p>Aprende los conceptos basicos del <br> lenguaje python con ejercicios para principiantes</p>
+                  </div>
+                </div>
+
+                <div class="cont-recommend">
+                  <img src="/javascript.png" alt="">
+                  <div class="cont-text">
+                    <span>JavaScript</span>
+                    <p>Aprende variables, bucles y eventos <br> para empezar a crear aplicaciones web interactivas</p>
+                  </div>
+          </div>
+          <button>Ver mas cursos </button>
+          </div>
+
+          <div id="cont-lenguage" class="w-[60%]  flex flex-row relative ml-[50px] text-[#ffffff] mt-[-5px]">
+            <div class="flex flex-col flex-1 basis-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">JavaScript intermedio</a>
+              <a href="#">JavaScript Avanzado</a>
+            </div>
+
+            <div class="flex flex-col flex-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+            </div>
+
+            <div class="flex flex-col flex-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+            </div>
+
+          </div> 
+        </div>
+          </li>
+          <li class="nav-menu-item">
+            <a href="cursos.html" class="nav-menu-link">Practica</a>
+
+            <div id="submenu" class="absolute w-[200px] h-[170px] top-[60px] left-[-70%] opacity-0">
+              <ul class="w-[200px] h-[135px] bg-[#0e1938] relative  top-[20px] rounded-[5px] text-amber-50">
+                <li class="leading-[50px] pl-[10px] w-[175px] ml-[10px] mt-[15px]
+                rounded-[5px] hover:bg-[#088bb327]"><a href="#" >Challenge</a></li>
+
+                <li class="leading-[50px] pl-[10px] w-[175px] ml-[10px] hover:bg-[#088bb327]
+                rounded-[5px] "><a href="#">Tutoriales</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-menu-item"><a href="Login.html" class="nav-menu-link">Construir</a></li>
+          <li class="nav-menu-item"><a href="http://localhost:3000/" class="nav-menu-link">Comunidad</a></li>
+
+        <div id="miImagen">
+            <img id="profilePhoto" src="/user.png" alt="cargando..." class=" img-user w-11 h-11 relative z-0 border-[2px] border-[#3f8cffda] rounded-3xl"/>
+            <div id="miDiv" class="hidden absolute top-[60px] right-[75px]">
+                <ul class="w-[170px] h-[135px] bg-[#0e1938] relative  rounded-[5px] text-amber-50 border-2 border-[#247cffda]">
+                <a href="profile.html">
+                  <li class="leading-[50px] pl-[10px] w-[145px] ml-[10px] mt-[15px]
+                  rounded-[5px] hover:bg-[#088bb327]">
+                      <i class="fa-solid fa-user pr-2"></i>
+                      <a href="profile.html" >Perfil</a>
+                  </li>
+                </a>
+
+                <li id="logoutBtn" class="leading-[50px] pl-[10px] w-[145px] ml-[10px] hover:bg-[#088bb327]
+                rounded-[5px] ">
+                    <i class="fas fa-door-open pr-2"></i>
+                    <a href="#">Cerrar Sesion</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        </ul>
+      </div>
+      </nav>
+
+      <div class="header-cont w-full h-auto bg-[#f3f3f3f2] top-[60px] relative flex flex-row overflow-hidden">
+        <img src="/line-shape-1.png" alt="" class="line absolute">
+        <img src="/puntos.png" alt="" class=" puntos w-[700px] h-[700px] absolute mt-[-270px] ml-[200px]">
+        <div class="header-cont-layout w-[55%] h-[400px] flex flex-row relative top-0 left-0 ">
+
+          <div class="cont-text-header w-full h-[550px] relative top-[-20px] left-[70px] flex flex-col justify-center items-start ">
+            <div class=" flex flex-row w-full gap-[15px]">
+              <div class="border-solid border-[#2f53b5] border-[1.5px] mt-[5px] rounded-[100px] w-[50px] h-[18px] max-w-[50px] overflow-hidden bg-transparent relative">
+                <div class="w-[30px] h-[20px] bg-[#2f53b5] rounded-[20px] absolute top-[-2px] right-[0]"></div>
+              </div>
+              <span class="text-[#1e3e98] font-[600] text-[18px]">EL MEJOR PROVEEDOR DE SOLUCIONES DE TI</span>
+            </div>
+
+             <h1 class="text-[60px] font-[700] pt-[15px] leading-[60px] font-kumbh text-[#0f1122]">Programa con más de 200 horas de ejercicios</h1>
+             <p class="text-[#585858] pt-[40px] text-[16px] font-[500] w-[93%]">¡Aprende a programar desde cero!
+                Domina los lenguajes más usados del mundo como Python, JavaScript, C# y más. cursos prácticos, proyectos reales y una comunidad que te impulsCa.
+             </p>
+
+             <div class="btn-efect w-[200px] h-[65px] bg-[#05060b] relative top-14 overflow-hidden">
+                <div class="cont-btn-one relative w-full h-[50%] bg-[#1e3e98] z-1"></div>
+                <a href="" class=" absolute z-100 mt-[-12px] text-center font-[600] w-[200px] text-[#fff]">Explorar más <i class="fa-solid fa-arrow-right-long ml-[5px] text-[#fff]"></i></a>
+                <div class="cont-btn-two relative w-full h-[50%] bg-[#1e3e98] z-1"></div>
+             </div>
+          </div>
+        </div>
+
+        <div class="cont-character  w-[45%] h-[550px] overflow-hidden relatives">
+          <img src="/figura.png" alt="" class="figure absolute w-[650px] h-[800px] top-0 right-0">
+          <img src="/mujer_emprendedora.png" alt="" class="character absolute w-[530px] h-[530px] bottom-0 right-[40px]">
+        </div>
+      </div>
+      
+
+      <div class="marquee-container bg-[#1e3e98] overflow-hidden">
+        <div class="marquee-track">
+          <span>Python ✦ JavaScript ✦ HTML ✦ Css ✦ </span>
+          <span>Angular ✦ TypeScript ✦ React ✦ Node.js ✦ </span>
+          <span>Ryby ✦ PHP ✦ Sql ✦ Tailwind ✦ </span>
+          <span>Python ✦ JavaScript ✦ HTML ✦ Css ✦ </span>
+          <span>Angular ✦ TypeScript ✦ React ✦ Node.js ✦ </span>
+          <span>Ryby ✦ PHP ✦ Sql ✦ Tailwind ✦ </span>
+          <span>Python ✦ JavaScript ✦ HTML ✦ Css ✦ </span>
+          <span>Angular ✦ TypeScript ✦ React ✦ Node.js ✦ </span>
+          <span>Ryby ✦ PHP ✦ Sql ✦ Tailwind ✦ </span>
+
+        </div>
+      </div>
+
+  </header>
+
+    <section class="view w-full h-auto relative top-[60px] left-0 overflow-hidden ">
+      
+      <img src="/rayas.png" alt="" class="absolute top-0 right-[-70px] z-10 rotate-[-75deg]">
+      <img src="/puntos.png" alt="" class="absolute top-0 left-0-0 z-10">
+
+      <div class="w-full h-auto flex flex-col justify-center items-center">
+        <h1 class="reveal leading-[50px] text-[#fff] text-[40px] pt-[70px] font-[700] text-center drop-shadow-[0_5px_1.5px_rgba(59,130,246,0.7)] ">Viaje a través de el mundo <br> de la programación</h1>
+        <p class="reveal pt-[40px] text-[20px] text-[#bcbcbc] font-[400] w-[90%] text-center">Aprenda a codificar con cursos divertidos e interactivos diseñados por expertos y educadores.</p>
+      </div>
+
+      <div class="z-20 px-6 py-10 flex flex-col justify-center items-center relative">        
+        <!-- Filtros o pestañas -->
+        <div class="reveal w-[60%] h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 pt-[10px] mb-8">
+          <button class="btn-secction active popular" data-tab="popular">Popular</button>
+          <button class="btn-secction z-1000" data-tab="web">Desarrollo web</button>
+          <button class="btn-secction" data-tab="data">Ciencias de datos</button>
+          <button class="btn-secction" data-tab="herramientas">Herramientas</button>
+        </div>
+
+        
+        <!-- Contenido de cada categoría -->
+        <div id="popular" class="cont-secction flex flex-col  justify-center items-center pt-3 w-full h-auto">
+          <!-- Tarjetas de cursos HTML -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  pt-10 w-[97%]">
+            <a href="prueba.html">
+              <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden">
+                <img src="/python-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+                <div class="flex flex-col justify-between p-5 h-full">
+                  <div  class="mt">
+                    <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                    <h1 class="text-white text-[23px] font-semibold">Python</h1>
+                    <p class="text-[16px] text-gray-300 mt-2">
+                      ¡Aprenda los fundamentos de programación, como variables, flujo de control y bucles!
+                    </p>
+                  </div>
+                  <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                    <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                      <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                    </div>
+                    <span class="pl-2 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden"> 
+              <img src="/html-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">HTML</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    Crea tu primer sitio web con HTML, los componentes básicos de la web y sumérgete en el mundo...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+          
+
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden">
+              <img src="/css-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">CSS</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                   ¡Aprenda a utilizar selectores y propiedades CSS para estilizar sus páginas HTML con colores, fuentes...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="curso_js.html">
+              <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden mt-4">
+                <img src="/js-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+                <div class="flex flex-col justify-between p-5 h-full">
+                  <div>
+                    <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                    <h1 class="text-white text-[23px] font-semibold">JavaScript</h1>
+                    <p class="text-[16px] text-gray-300 mt-2">
+                      ¡Aprenda variables, bucles, funciones y eventos para comenzar a crear aplicaciones web interactivas...
+                    </p>
+                  </div>
+                  <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                    <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                      <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                    </div>
+                    <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden mt-4">
+              <img src="/sql-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">SQL</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    Aprenda los conceptos básicos de bases de datos, consultas, cálculos y más para comenzar a...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden mt-4">
+              <img src="/java-lenguaje.png" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">Java</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    ¡Domine Java explorando la programación orientada a objetos y las estructuras de datos esenciales...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">  Principiante</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+
+        <div id="web" class="cont-secction hidden">
+          <div class=" flex flex-col  justify-center items-center pt-3 w-full h-auto">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  pt-10 w-[97%] ">
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden">
+              <img src="/Best-React.png" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div  class="mt">
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">React</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    Descubre React, una biblioteca de desarrollo web de código abierto basada en JavaScript, creada...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center justify-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center justify-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-2 tracking-[2px] font-medium text-slate-400 pr-1">Intermedio</span>
+                </div>
+              </div>
+            </div>
+          
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden"> 
+              <img src="/html-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">HTML</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    Crea tu primer sitio web con HTML, los componentes básicos de la web y sumérgete en el mundo...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+          
+
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden">
+              <img src="/css-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">CSS</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                   ¡Aprenda a utilizar selectores y propiedades CSS para estilizar sus páginas HTML con colores, fuentes...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden mt-4">
+              <img src="/js-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">JavaScript</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    ¡Aprenda variables, bucles, funciones y eventos para comenzar a crear aplicaciones web interactivas...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden mt-4">
+              <img src="/intermedio_js.png" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">JavaScript Intermedio</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    Libere el poder de JavaScript con programación asincrónica.
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center justify-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Intermedio</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+         <div id="data" class="cont-secction hidden">
+          <div class=" flex flex-col  justify-center items-center pt-3 w-full h-auto">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  pt-10 w-[97%] ">
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden">
+              <img src="/python-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">Python</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    ¡Aprenda los fundamentos de programación, como variables, flujo de control y bucles, con el lenguaje...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden ">
+              <img src="/intermedio_python.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">Python Intermedio</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    Comience a aprender Python intermedio con estructuras de datos.
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center justify-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Intermedio</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card bg-[#090b27] shadow-md shadow-black relative rounded-xl flex flex-col overflow-hidden">
+              <img src="/sql-lenguaje.jpg" alt="Curso Python" class="w-full h-auto object-cover p-3">
+              <div class="flex flex-col justify-between p-5 h-full">
+                <div>
+                  <span class="text-gray-400 font-medium text-[20px] tracking-[2px]">Curso</span>
+                  <h1 class="text-white text-[23px] font-semibold">SQL</h1>
+                  <p class="text-[16px] text-gray-300 mt-2">
+                    Aprenda los conceptos básicos de bases de datos, consultas, cálculos y más para comenzar a...
+                  </p>
+                </div>
+                <div class="mt-4 w-[200px] h-[30px] bg-[#707cad32] rounded-2xl flex items-center px-2">
+                  <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                    <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                  </div>
+                  <span class="pl-3 tracking-[2px] font-medium text-slate-400 pr-1">Principiante</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+        
+      </div>
+
+      
+    </section>
+
+   
+    <script type="module">
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('nav-menu_visible');
+    });
+  });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.querySelector('.nav-menu');
+
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('nav-menu_visible');
+        });
+      });
+    
+
+
+   document.addEventListener("DOMContentLoaded", () => {
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible"); // 👈 vuelve a activar cuando reentra
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => observer.observe(el));
+  });
+
+
+
+      const tabs = document.querySelectorAll('.btn-secction');
+      const contents = document.querySelectorAll('.cont-secction');
+
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const target = btn.getAttribute('data-tab');
+
+          // Desactivar todos
+          tabs.forEach(b => b.classList.remove('active'));
+          contents.forEach(c => c.classList.add('hidden'));
+
+          // Activar el seleccionado
+          btn.classList.add('active');
+          document.getElementById(target).classList.remove('hidden');
+        });
+      });
+
+      
+
+      const img = document.getElementById('miImagen');
+  const div = document.getElementById('miDiv');
+
+  img.addEventListener('click', () => {
+    div.classList.toggle('hidden'); // alterna entre mostrar y ocultar
+  });
+    </script>
+
+    </div>
+   <h1>Perfil</h1>
+  <img id="profilePhoto" src="" alt="" style="display:none; width:100px; height:100px; border-radius:50%;" />
+  <p id="profileName">Cargando nombre...</p>
+  <p id="profileEmail">Cargando email...</p>
+  <button id="logoutBtn">Cerrar sesión</button> 
+
+
+   <script type="module" src="/src/scripts/auth/mainLogin.js"></script>
+  <script type="module" src="/src/scripts/auth/profile.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,144 @@
+main{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 89vh;
+    background: #2e7b4a;
+}
+
+.cont-texto{
+    background-color: #020319;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 74vh;
+
+}
+#lesson-text {
+    background-color: #020319;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: start;
+}
+
+#lesson-text p{
+    font-size: 16px;
+
+}
+
+#lesson-text img{
+    width: 40%;
+}
+
+#editor-container {
+    background-color: #1e293b;
+    width: 50%;
+    padding: 10px;
+    height: 100%;
+    border-top: 2px solid #334155;
+}
+#buttons {
+    margin-top: 8px;
+}
+button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    letter-spacing: 1px;
+}
+#run-btn {
+    background-color: #3b4761;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 0px rgba(2, 5, 20, 0.274);
+
+}
+#check-btn {
+    background-color: #2e7b4a;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 0px rgba(2, 5, 20, 0.274);
+
+}
+#output {
+    background-color: #0f172a;
+    border-top: 1px solid #334155;
+    padding: 10px;
+    height: 37%;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    font-family: monospace;
+}
+
+.lesson-list{
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+}
+
+.lesson-list span{
+    padding: 10px 0;
+    font-size:18px ;
+    font-weight: 600;
+    display: block;    
+}
+
+.lesson-list i{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.lessons{
+    width: 100%;
+    height: auto;
+}
+
+.lessons p{
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.lessons p:hover{
+    background: #4a9eff27;
+}
+
+
+@media(max-width:768px){
+    main{
+        flex-direction: column;
+        top: -5px;
+        height: 100vh;
+    }
+
+    
+
+    #cont-text {
+        width: 100%;
+        height: 500px;
+    }
+
+    #editor-container {
+        width: 100%;
+        padding-bottom: 110px;
+
+    }
+
+    .barra-horizontal{
+        display: none;
+    }
+}

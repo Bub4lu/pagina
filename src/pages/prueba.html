@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer"/>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="src/style/proyect.css" />
+    <link rel="stylesheet" href="src/style/cursos.css" />
+    <title>Document</title>
+</head>
+<body class="bg-[#020319]">
+  <nav class="navbar relative">
+      <div class="nav">
+        <a href="/Login.html" class="logo">Logo</a>
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="home.html" class="nav-menu-link learning">Aprender</a>
+
+            <div class="submenu">
+              <div class="Curses-recomend">
+                <h1>Recomendado</h1>
+                <div class="cont-recommend">
+                  <img  class="right-[2px]" src="/payton.png" alt="">
+                  <div class="cont-text">
+                    <span>Python</span>
+                    <p>Aprende los conceptos basicos del <br> lenguaje python con ejercicios para principiantes</p>
+                  </div>
+                </div>
+
+                <div class="cont-recommend">
+                  <img src="/javascript.png" alt="">
+                  <div class="cont-text">
+                    <span>JavaScript</span>
+                    <p>Aprende variables, bucles y eventos <br> para empezar a crear aplicaciones web interactivas</p>
+                  </div>
+          </div>
+          <button>Ver mas cursos </button>
+          </div>
+
+          <div id="cont-lenguage" class="w-[60%]  flex flex-row relative ml-[50px] text-[#ffffff] mt-[-5px]">
+            <div class="flex flex-col flex-1 basis-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">JavaScript intermedio</a>
+              <a href="#">JavaScript Avanzado</a>
+            </div>
+
+            <div class="flex flex-col flex-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+            </div>
+
+            <div class="flex flex-col flex-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+            </div>
+
+          </div> 
+        </div>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link">Practica</a>
+
+            <div id="submenu" class="absolute w-[200px] h-[170px] top-[60px] left-[-70%] opacity-0">
+              <ul class="w-[200px] h-[135px] bg-[#0e1938] relative  top-[20px] rounded-[5px] text-amber-50">
+                <li class="leading-[50px] pl-[10px] w-[175px] ml-[10px] mt-[15px]
+                rounded-[5px] hover:bg-[#088bb327]"><a href="#" >Challenge</a></li>
+
+                <li class="leading-[50px] pl-[10px] w-[175px] ml-[10px] hover:bg-[#088bb327]
+                rounded-[5px] "><a href="#">Tutoriales</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-menu-item"><a href="Login.html" class="nav-menu-link">Construir</a></li>
+          <li class="nav-menu-item"><a href="http://localhost:3000/" class="nav-menu-link">Comunidad</a></li>
+
+        <div id="miImagen">
+            <img id="profilePhoto" src="/user.png" alt="cargando..." class=" img-user w-11 h-11 relative z-0 border-[2px] border-[#3f8cffda] rounded-3xl"/>
+            <div id="miDiv" class="hidden absolute top-[60px] right-[75px]">
+                <ul class="w-[170px] h-[135px] bg-[#0e1938] relative  rounded-[5px] text-amber-50 border-2 border-[#247cffda]">
+                <li class="leading-[50px] pl-[10px] w-[145px] ml-[10px] mt-[15px]
+                rounded-[5px] hover:bg-[#088bb327]">
+                    <i class="fa-solid fa-user pr-2"></i>
+                    <a href="profile.html" >Perfil</a>
+                </li>
+
+                <li id="logoutBtn" class="leading-[50px] pl-[10px] w-[145px] ml-[10px] hover:bg-[#088bb327]
+                rounded-[5px] ">
+                    <i class="fas fa-door-open pr-2"></i>
+                    <a href="#">Cerrar Sesion</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        </ul>
+      </div>
+      </nav>
+
+      <section class="flex flex-col relative top-[60px]">
+        <div class="cont-banner relative flex justify-between items-center">
+            <div class="cont-text w-[50%] ml-[6%] pr-[100px] h-[400px] flex flex-col gap-5">
+                <div class="cont w-full h-[60px] flex flex-row items-end gap-2">
+                    <div class="w-[200px] h-[35px] rounded-3xl flex items-center px-2 border-[1px] border-amber-50">
+                        <div class="w-[70px] h-[20px] bg-slate-500 rounded-xl flex items-center px-1">
+                        <div class="w-[25px] h-[20px] bg-slate-100 rounded-xl"></div>
+                        </div>
+                        <span class="pl-2 tracking-[2px] font-medium text-slate-300 pr-1">Principiante</span>
+                    </div>
+                    <span class="text-[18px] text-amber-50 pb-1">Curso</span>
+                </div>
+                <h1 class="text-[60px] font-[500] text-amber-50 drop-shadow-[0_6px_0_rgba(0,0,0,.5)] drop-shadow-[#00000071]">Python</h1>
+                <p class="text-[17px] text-amber-50">¡Aprenda los fundamentos de programación, como variables, flujo 
+                     de control y bucles, con el lenguaje de codificación más popular 
+                      y versátil del mundo: Python!</p>
+                <a href="#" class="button w-[300px] pt-[16px] pb-[16px] pl-[40px] mt-2 rounded-lg bg-[#2e43a0] text-amber-50 shadow-[0_5px_0_rgba(0,0,0,0.5)] shadow-[#00000066]">Empieza a aprender gratis</a>
+                <img src="/iconos-banner.png" alt="" class=" w-[230px] h-[45px] relative top-2 left-4">
+            </div>
+            <img src="/banner-img.png" alt="" class="icons">
+        </div>
+
+        <div class="w-full h-[500px] flex flex-row pt-20 ">
+          <div class=" w-[60%] h-[500px] relative  flex flex-col items-center">
+            <div class="list-content">
+              <div class="list-title rounded-t-xl">
+                <span class="">1</span>
+                <h1 class="">Hola mundo</h1>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+              <div class="leccion-content">
+                <div class="list-lesson h-auto bg-amber-300">
+                  <span class="text-[#020319]">Aprenda a escribir su primera línea de Python imprimiendo mensajes en la terminal.</span>
+                  <div class="info-lesson">
+                    <div class="">
+                      <p class="text-[#020319c6] font-[600]">Ejercicio 1</p>
+                      <h3 class="text-[#020319c6] font-[600]">Configuracion</h3>
+                    </div>
+                    <a href="#" class="redirectButton" id="redirectButtonPython1" data-curso="curso_python" data-leccion="leccion_1">Comenzar</a>
+                  </div>
+
+                  <div class="info-lesson">
+                    <div class="">
+                      <p class="text-[#020319c6] font-[600]">Ejercicio 1</p>
+                      <h3 class="text-[#020319c6] font-[600]">Configuracion</h3>
+                    </div>
+                    <a href="#" class="redirectButton" id="redirectButtonJS1" data-curso="curso_javaScript" data-leccion="leccion_1">Comenzar</a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="list-content">
+              <div class="list-title">
+                <span class="">1</span>
+                <h1 class="">Hola mundo</h1>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+              <div class="leccion-content">
+                
+
+              </div>
+            </div>
+
+            <div class="list-content">
+              <div class="list-title">
+                <span class="">1</span>
+                <h1 class="">Hola mundo</h1>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+              <div class="leccion-content"></div>
+            </div>
+
+            <div class="list-content">
+              <div class="list-title">
+                <span class="">1</span>
+                <h1 class="">Hola mundo</h1>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+              <div class="leccion-content"></div>
+            </div>
+          </div>
+
+          <div class="w-[30%] h-[300px] bg-amber-300"></div>
+        </div>
+
+      </section>
+
+    <script>
+        const img = document.getElementById('miImagen');
+        const div = document.getElementById('miDiv');
+
+        img.addEventListener('click', () => {
+          div.classList.toggle('hidden'); // alterna entre mostrar y ocultar
+        });
+
+        //lecciones
+        document.addEventListener("DOMContentLoaded", () => {
+        const titles = document.querySelectorAll(".list-title");
+
+        titles.forEach(title => {
+          // Al cargar, ocultamos todos los contenidos relacionados
+          const content = title.nextElementSibling;
+          content.style.display = "none";
+
+          title.addEventListener("click", () => {
+            const isVisible = content.style.display === "block";
+
+            // Alternamos display
+            content.style.display = isVisible ? "none" : "block";
+
+            // Girar la flecha
+            const icon = title.querySelector("i");
+            if (icon) {
+              if (isVisible) {
+                icon.style.transform = "rotate(180deg)";
+              } else {
+                icon.style.transform = "rotate(0deg)";
+              }
+            }
+          });
+        });
+      });
+
+      
+
+
+      </script>
+
+      <script type="module" src="/src/scripts/auth/authStatus.js"></script>
+      <script type="module" src="/src/scripts/auth/archivo.js"></script>
+
+
+</body>
+</html>

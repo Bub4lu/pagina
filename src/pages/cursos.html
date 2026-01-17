@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/yonce.min.css">
+  <link rel="stylesheet" href="src/style/lecciones.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  referrerpolicy="no-referrer"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.10/marked.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+  <link rel="stylesheet" href="src/style/proyect.css" />
+  <title>Document</title>
+</head>
+<body class="bg-[#020319]">
+    <nav class="navbar relative">
+      <div class="nav">
+        <a href="/Login.html" class="logo">Logo</a>
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="home.html" class="nav-menu-link learning">Aprender</a>
+
+            <div class="submenu">
+              <div class="Curses-recomend">
+                <h1>Recomendado</h1>
+                <div class="cont-recommend">
+                  <img  class="right-[2px]" src="/payton.png" alt="">
+                  <div class="cont-text">
+                    <span>Python</span>
+                    <p>Aprende los conceptos basicos del <br> lenguaje python con ejercicios para principiantes</p>
+                  </div>
+                </div>
+
+                <div class="cont-recommend">
+                  <img src="/javascript.png" alt="">
+                  <div class="cont-text">
+                    <span>JavaScript</span>
+                    <p>Aprende variables, bucles y eventos <br> para empezar a crear aplicaciones web interactivas</p>
+                  </div>
+          </div>
+          <button>Ver mas cursos </button>
+          </div>
+
+          <div id="cont-lenguage" class="w-[60%]  flex flex-row relative ml-[50px] text-[#ffffff] mt-[-5px]">
+            <div class="flex flex-col flex-1 basis-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">JavaScript intermedio</a>
+              <a href="#">JavaScript Avanzado</a>
+            </div>
+
+            <div class="flex flex-col flex-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+            </div>
+
+            <div class="flex flex-col flex-1/2 gap-[12px]">
+              <h1 class="tracking-[2px] text-[#b2b2b2] uppercase">Desarrollo Web</h1>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+              <a href="#">Python</a>
+            </div>
+
+          </div> 
+        </div>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link">Practica</a>
+
+            <div id="submenu" class="absolute w-[200px] h-[170px] top-[60px] left-[-70%] opacity-0">
+              <ul class="w-[200px] h-[135px] bg-[#0e1938] relative  top-[20px] rounded-[5px] text-amber-50">
+                <li class="leading-[50px] pl-[10px] w-[175px] ml-[10px] mt-[15px]
+                rounded-[5px] hover:bg-[#088bb327]"><a href="#" >Challenge</a></li>
+
+                <li class="leading-[50px] pl-[10px] w-[175px] ml-[10px] hover:bg-[#088bb327]
+                rounded-[5px] "><a href="#">Tutoriales</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-menu-item"><a href="Login.html" class="nav-menu-link">Construir</a></li>
+          <li class="nav-menu-item"><a href="http://localhost:3000/" class="nav-menu-link">Comunidad</a></li>
+
+        <div id="miImagen">
+            <img id="profilePhoto" src="/user.png" alt="cargando..." class=" img-user w-11 h-11 relative z-0 border-[2px] border-[#3f8cffda] rounded-3xl"/>
+            <div id="miDiv" class="hidden absolute top-[60px] right-[75px]">
+                <ul class="w-[170px] h-[135px] bg-[#0e1938] relative  rounded-[5px] text-amber-50 border-2 border-[#247cffda]">
+                <li class="leading-[50px] pl-[10px] w-[145px] ml-[10px] mt-[15px]
+                rounded-[5px] hover:bg-[#088bb327]">
+                    <i class="fa-solid fa-user pr-2"></i>
+                    <a href="profile.html" >Perfil</a>
+                </li>
+
+                <li id="logoutBtn" class="leading-[50px] pl-[10px] w-[145px] ml-[10px] hover:bg-[#088bb327]
+                rounded-[5px] ">
+                    <i class="fas fa-door-open pr-2"></i>
+                    <a href="#">Cerrar Sesion</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+
+        </ul>
+      </div>
+      </nav>
+
+  <main class="top-[65px] relative">
+    <div id="slide-panel" class="transition-transform duration-300 -translate-x-[400px] transform overflow-y-scroll absolute flex flex-col top-0 left-0 h-full w-[320px] bg-[#020319] text-white z-50">
+  <h3 class="bg-[#3d4151] p-2.5 pl-5 text-[18px] tracking-[2px] border-b-[1px] border-[#b9b9b9]">
+    Lista de lecciones
+  </h3>
+
+  <!-- Contenedor que llenaremos desde JS -->
+  <div id="lesson-container" class="w-full h-auto flex flex-col pt-3 px-2"></div>
+</div>
+
+
+    <div class="barra-horizontal w-full h-[60px] justify-between items-center  bg-[#020319] border-t-[2px] border-[#7b7b7b] absolute z-30 bottom-0 left-0 flex flex-row">
+      <div class="pl-9 w-auto h-[60px] flex flex-col justify-center ">
+        <h1 class="lessons-lists text-[16px] font-[600]">Cargando...</h1>
+        <span class="text-[#0071ea] text-[15px] font-[600]">10 xp</span>
+      </div>
+      <div class="">
+        <button id="prev-btn" class="bg-[#67c5ff69] text-white px-4 py-2 opacity-50 cursor-not-allowed">Anterior</button>
+        <button id="next-btn" class="bg-[#67c5ff69] text-white font-[300] px-4 py-2">Siguiente</button>
+      </div>
+      <button id="toggle-btn" class=" bg-blue-500 text-white">
+        <i class="fa-solid fa-bars text-[20px]"></i>
+      </button>
+
+      </div>
+
+    <div id="cont-text" class="bg-[#3d4151] w-[50%] pt-5">
+      <span class="text-[#bdbdbd] relative bottom-2 left-4 tracking-[2px]">Ejercicio</span>
+      <div class="cont-texto">
+        <h1 id="lesson-title" class="text-[28px] font-[600]"></h1>
+        <div class="flex flex-row w-auto">
+          <i class="fa-solid fa-hashtag text-[#0066d3] text-[20px] p-1"></i>
+          <span id="lesson-subtitle" class="text-[20px]"></span>
+        </div>
+        <div id="lesson-text">
+          Cargando contenido de la lección...
+        </div>
+      </div>
+    
+    </div>
+    
+    <div id="editor-container" class="">
+      <div class="w-[130px] h-[35px] bg-[#1c1c1c] pt-2 mt-1 flex flex-row gap-2">
+        <img src="/python.png" alt="" class="w-[20px] h-[20px] ml-4">
+        <p class="text-[14px] font-[600]">script.py</script></p>
+      </div>
+      <textarea id="editor" class="pt-5"></textarea>
+      <div id="buttons">
+        <button id="run-btn">Run</button>
+        <button id="check-btn">Corregir</button>
+      </div>
+      <div id="output" class=" mt-2"></div>
+    </div>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const slidePanel = document.getElementById('slide-panel');
+    
+
+    let visible = false;
+
+    toggleBtn.addEventListener('click', () => {
+      visible = !visible;
+
+      if (visible) {
+        slidePanel.classList.remove('-translate-x-[400px]');
+        slidePanel.classList.add('translate-x-0');
+      } else {
+        slidePanel.classList.remove('translate-x-0');
+        slidePanel.classList.add('-translate-x-[400px]');
+      }
+    });
+
+    //lecciones
+        document.addEventListener("DOMContentLoaded", () => {
+        const titles = document.querySelectorAll(".lesson-list");
+
+        titles.forEach(title => {
+          // Al cargar, ocultamos todos los contenidos relacionados
+          const content = title.nextElementSibling;
+          content.style.display = "none";
+
+          title.addEventListener("click", () => {
+            const isVisible = content.style.display === "block";
+
+            // Alternamos display
+            content.style.display = isVisible ? "none" : "block";
+
+            // Girar la flecha
+            const icon = title.querySelector("i");
+            if (icon) {
+              if (isVisible) {
+                icon.style.transform = "rotate(180deg)";
+              } else {
+                icon.style.transform = "rotate(0deg)";
+              }
+            }
+          });
+        });
+      });
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".btn-lesson").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const idLeccion = btn.dataset.leccion;
+          window.location.href = `/src/pages/cursos.html?id=${idLeccion}`;
+        });
+      });
+    });
+
+    
+  </script>
+
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+  <!-- CodeMirror -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+
+  <!-- Pyodide -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+  <!-- Librería para convertir Markdown -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script type="module" src="/src/scripts/auth/authStatus.js"></script>
+  <script type="module" src="/src/scripts/auth/lecciones.js"></script>
+</body>
+</html>
+
